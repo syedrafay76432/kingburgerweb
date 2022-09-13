@@ -25,6 +25,10 @@ const Contact = mongoose.model('Contact',{
     Adress:{
         type: String,
         required: true
+    },
+    Date:{
+        type:Date,
+        default:Date.now
     }
 })
 
