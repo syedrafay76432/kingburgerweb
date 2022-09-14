@@ -4,7 +4,7 @@ const path = require("path");
 const hbs = require("hbs")
 const Contact = require("./models/contact");
 const app = express();
-const port = process.env.PORT || 3000
+const port = process.env.PORT
 
 app.use(express.json())
 app.use(express.urlencoded({extended:false}))

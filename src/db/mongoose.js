@@ -1,6 +1,6 @@
 const mongoose = require('mongoose')
 
-mongoose.connect('mongodb://127.0.0.1/kingburger', {
+mongoose.connect(process.env.MONGODB_URL, {
     useNewUrlParser: true
 }).then(()=>{
     console.log("mongodb OK")
