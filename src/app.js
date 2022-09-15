@@ -26,5 +26,5 @@ app.post("/contact", async(req, res) => {
     }
 })
 app.listen(port, () => {
-    console.log("Port is on: " + port)
+    console.log("Port is on:  " + port)
 })
