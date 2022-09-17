@@ -25,6 +25,13 @@ app.post("/contact", async(req, res) => {
         res.status(500).send(error)
     }
 })
+app.get("/admin", async(req, res) => {
+    try {
+        res.render('admin')    
+    } catch (error) {
+        res.status(500).send(error)
+    }
+})
 app.listen(port, () => {
     console.log("Port is on:  " + port)
 })
